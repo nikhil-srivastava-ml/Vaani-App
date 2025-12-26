@@ -23,23 +23,31 @@ Built with **Flutter** and **Generative AI**, it provides a gamified learning pa
 
 ### 👶 For Children (Gamified Learning)
 * **Interactive Speech Practice:** Real-time feedback on pronunciation using AI voice analysis.
-* **Gamified Journey:** A learning path that unlocks new levels as the child improves.
+* **Gamified Journey:** A "Candy Crush" style learning path that unlocks new levels as the child improves.
 * **Visual Aids:** Fun characters and animations to keep children engaged.
 * **Achievement System:** Badges and rewards to motivate daily practice.
 
 ### 👨‍👩‍👧‍👦 For Parents (Analytics & Control)
-* **Detailed Progress Reports:** Track accuracy percentages for specific phonetics.
+* **Detailed Progress Reports:** Track accuracy percentages for specific phonetics (e.g., Hindi vowels).
 * **Activity Logs:** Monitor daily learning time and skill acquisition graphs.
 * **Smart Tips:** AI-suggested oral motor exercises based on the child's weak areas.
 * **Role-Based Access:** Secure login options for both Parents and Children.
 
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack & AI Models
 
 * **Frontend:** Flutter (Dart)
-* **Backend:** Python / Node.js (TBD)
-* **AI Models:** * **Speech Analysis:** OpenAI Whisper / Google Speech-to-Text
-    * **GenAI:** Google Gemini (for personalized tips)
+* **Backend:** Python (FastAPI / Flask) / Node.js
 * **State Management:** Provider / Bloc
+
+### 🧠 AI & Machine Learning Pipeline
+* **ASR (Automatic Speech Recognition):** * **OpenAI Whisper / Wav2Vec 2.0:** High-accuracy models used to transcribe speech and detect pronunciation errors in real-time.
+    * **Google Speech-to-Text API:** Fallback engine for multilingual support.
+* **NLP (Natural Language Processing):**
+    * **BERT / Transformers:** Used for intent classification and context understanding.
+* **Generative AI:**
+    * **Google Gemini / GPT-4o:** Generates personalized therapy tips and dynamic conversation responses for the child.
+* **Audio Processing:**
+    * **Librosa / PyDub:** For analyzing pitch, tone, and speech clarity.
 
 ## 📦 Installation
 
